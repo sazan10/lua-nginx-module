@@ -20,6 +20,7 @@ jobs:
         wget https://github.com/openresty/lua-resty-core/archive/refs/tags/v0.1.28.tar.gz
         wget https://github.com/openresty/lua-resty-lrucache/archive/refs/tags/v0.13.tar.gz
     - name: extract and build
+      run: |  
         tar -xzvf nginx-1.19.3.tar.gz
         tar -xzvf v2.1-20240314.tar.tar.gz
         tar -xzvf v0.3.3.tar.gz
